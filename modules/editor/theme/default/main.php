@@ -94,6 +94,7 @@ function setEditMode()
 	EditForm = frames.editAreaIframe;
 	EditForm.document.designMode = 'on';
 	EditForm.document.write(getId('setCssCode').innerHTML.replace(/&lt;/g,'<').replace(/&gt;/g,'>'));
+	EditForm.document.close();
 
 	EditRange = EditForm.document.selection;
 	if(navigator.userAgent.indexOf('Chrome') != -1 || navigator.userAgent.indexOf('Safari') != -1) frames.editAreaIframe.focus();

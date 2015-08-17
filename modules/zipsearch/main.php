@@ -1,6 +1,8 @@
 <?php
 if(!defined('__KIMS__')) exit;
 
+include_once $g['dir_module'].'var/var.php';
+
 if (!$zip1 || !$zip2 || !$addr1)
 {
 	getLink(RW(0),'','','');
@@ -8,7 +10,8 @@ if (!$zip1 || !$zip2 || !$addr1)
 
 $mod	= 'front';
 $iframe	= 'Y';
-$theme	= !$g['mobile'] || $_SESSION['pcmode']=='Y' ? '_pc/default' : '_mobile/default';
+if ($g['mobile']&&$_SESSION['pcmode']!='Y') $theme =$d['zipsearch']['skin_mobile']?$d['zipsearch']['skin_mobile']:'_mobile/default';
+else $theme =$d['zipsearch']['skin_pc']?$d['zipsearch']['skin_pc']:'_pc/default';
 $zipdb	= $g['dir_module'].'/var/zipcode.db';
 if (!is_file($zipdb)) include_once $g['dir_module'].'action/a.zipcode_down.php';
 $zipfile= file($zipdb);

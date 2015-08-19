@@ -192,7 +192,7 @@
 	<td>
 		<div id="addrbox">
 		<div>
-		<input type="number" name="zip_1" id="zip1" value="" maxlength="5" size="5" readonly="readonly" class="input" /> 
+		<input type="number" name="zip_1" id="zip1" value="" maxlength="6" size="6" readonly="readonly" class="input" /> 
 		<input type="button" value="우편번호" class="btngray btn" onclick="OpenWindow('<?php echo $g['s']?>/?r=<?php echo $r?>&m=zipsearch&zip1=zip1&addr1=addr1&focusfield=addr2');" />
 		</div>
 		<div><input type="text" name="addr1" id="addr1" value="" readonly="readonly" class="input lsize" /></div>
@@ -384,7 +384,7 @@
 	<td class="key">사업장주소<span>*</span></td>
 	<td>
 		<div>
-		<input type="number" name="comp_zip_1" id="comp_zip1" value="" maxlength="5" size="5" readonly="readonly" class="input" />
+		<input type="number" name="comp_zip_1" id="comp_zip1" value="" maxlength="6" size="6" readonly="readonly" class="input" />
 		<input type="button" value="우편번호" class="btngray btn" onclick="OpenWindow('<?php echo $g['s']?>/?r=<?php echo $r?>&m=zipsearch&zip1=comp_zip1&addr1=comp_addr1&focusfield=comp_addr2');" />
 		</div>
 		<div><input type="text" name="comp_addr1" id="comp_addr1" value="" readonly="readonly" class="input lsize" /></div>

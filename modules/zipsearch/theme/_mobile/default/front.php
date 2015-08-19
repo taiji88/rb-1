@@ -15,7 +15,6 @@
 		<input type="hidden" name="m" value="<?php echo $m?>" />
 		<input type="hidden" name="action" value="search" />
 		<input type="hidden" name="zip1" value="<?php echo $zip1?>" />
-		<input type="hidden" name="zip2" value="<?php echo $zip2?>" />
 		<input type="hidden" name="addr1" value="<?php echo $addr1?>" />
 		<input type="hidden" name="focusfield" value="<?php echo $focusfield?>" />
 

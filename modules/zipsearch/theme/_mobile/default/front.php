@@ -95,8 +95,7 @@
 function zip_copy(zip1,zip2,addr)
 {
 	<?php if($focusfield):?>
-	opener.document.getElementById('<?php echo $zip1?>').value = zip1;
-	opener.document.getElementById('<?php echo $zip2?>').value = zip2;
+	opener.document.getElementById('<?php echo $zip1?>').value = zip1 + zip2;
 	opener.document.getElementById('<?php echo $addr1?>').value = addr;
 	opener.document.getElementById('<?php echo $focusfield?>').focus();
 	<?php endif?>
